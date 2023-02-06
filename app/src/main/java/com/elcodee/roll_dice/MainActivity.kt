@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
                 else -> R.drawable.dice_six
             }
             if (spinDice == 6){
-                binding.ivDice.setImageResource(listDice)
                 binding.btnRoll.isEnabled = false
             }else{
                 binding.ivDice.setImageResource(listDice)
