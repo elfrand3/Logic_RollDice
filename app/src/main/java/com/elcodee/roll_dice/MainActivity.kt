@@ -16,6 +16,17 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.btnRoll.setOnClickListener {
+//            val dice = rollDice(6)
+//            val listDice = when(dice.imageDice()){
+//                1 -> R.drawable.dice_one
+//                2 -> R.drawable.dice_two
+//                3 -> R.drawable.dice_three
+//                4 -> R.drawable.dice_four
+//                5 -> R.drawable.dice_five
+//                else -> R.drawable.dice_six
+//            }
+//            binding.ivDice.setImageResource(listDice)
+
             val dice = rollDice(6)
             val spinDice = dice.imageDice()
             val listDice = when(spinDice){
