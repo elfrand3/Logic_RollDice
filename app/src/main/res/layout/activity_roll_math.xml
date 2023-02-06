@@ -4,38 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RollMathActivity">
 
-    <ImageView
-        android:id="@+id/iv_dice"
+    <TextView
+        android:id="@+id/tv_math"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="80dp"
         android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/dice_six"/>
+        android:layout_height="300dp"/>
 
     <Button
-        android:id="@+id/btn_roll"
+        android:id="@+id/btn_putar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_dice"
+        app:layout_constraintTop_toBottomOf="@+id/tv_math"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:textAllCaps="false"
         android:text="Putar Judi" />
-
     <Button
-        android:id="@+id/btn_Angka"
+        android:id="@+id/btn_riset"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_roll"
+        app:layout_constraintTop_toBottomOf="@+id/btn_putar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:textAllCaps="false"
-        android:layout_marginEnd="20dp"
-        android:text="Logic Angka" />
+        android:text="Riset" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

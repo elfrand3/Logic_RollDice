@@ -1,5 +1,6 @@
 package com.elcodee.roll_dice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -15,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
+        binding.btnAngka.setOnClickListener {
+            startActivity(Intent(this@MainActivity, RollMathActivity::class.java))
+        }
         binding.btnRoll.setOnClickListener {
 //            val dice = rollDice(6)
 //            val listDice = when(dice.imageDice()){
