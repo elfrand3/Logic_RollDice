@@ -28,14 +28,23 @@
         android:text="Putar Judi" />
 
     <Button
-        android:id="@+id/btn_Angka"
+        android:id="@+id/btn_Angka1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_roll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:textAllCaps="false"
         android:layout_marginEnd="20dp"
-        android:text="Logic Angka" />
+        android:text="Logic Angka 1" />
+    <Button
+        android:id="@+id/btn_Angka2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Angka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginEnd="20dp"
+        android:text="Logic Angka 2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

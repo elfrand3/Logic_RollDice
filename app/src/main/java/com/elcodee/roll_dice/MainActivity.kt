@@ -16,8 +16,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        binding.btnAngka.setOnClickListener {
+        binding.btnAngka1.setOnClickListener {
             startActivity(Intent(this@MainActivity, RollMathActivity::class.java))
+        }
+        binding.btnAngka2.setOnClickListener {
+            startActivity(Intent(this@MainActivity, LogicActivity::class.java))
         }
         binding.btnRoll.setOnClickListener {
 //            val dice = rollDice(6)
